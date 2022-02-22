@@ -42,6 +42,10 @@ header {
   transition: all 0.4s;
 }
 
+.toggle-open > div {
+  margin-top: 9px;
+}
+
 .toggle-open > div:first-child {
   transform: rotate(135deg);
 }
@@ -79,8 +83,8 @@ header {
 }
 
 #leftMenu ul {
-  padding-top: 80px;
-  padding-left: 20px;
+  padding-top: 120px;
+  padding-left: 22px;
 }
 
 #leftMenu li {
