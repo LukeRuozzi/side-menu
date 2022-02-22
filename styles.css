@@ -1,0 +1,97 @@
+/* start styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=VT323&display=swap');
+
+body {
+  margin: 0;
+  background: #444;
+  font-family: 'Poppins';
+}
+li,
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+main {
+  padding: 140px 40px 40px;
+  color: #bbb;
+}
+
+/* solution styles */
+header {
+  height: 120px;
+  font-size: 2.5rem;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(54, 52, 52);
+}
+
+#menu-toggler {
+  position: fixed;
+  top: 50px;
+  left: 20px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+#menu-toggler div {
+  width: 25px;
+  height: 5px;
+  border-bottom: 2px solid #fff;
+  transition: all 0.4s;
+}
+
+.toggle-open > div:first-child {
+  transform: rotate(135deg);
+}
+
+.toggle-open > div:nth-child(2) {
+  display: none;
+}
+
+.toggle-open > div:last-child {
+  transform: rotate(-135deg);
+  margin-top: -7px;
+  margin-left: -3px;
+}
+
+#leftMenuWrapper {
+  position: absolute;
+  transform: translateX(-100%);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+}
+
+#leftMenu {
+  position: absolute;
+  transform: translateX(-100%);
+  top: 0;
+  left: 0;
+  width: 230px;
+  height: 100%;
+  background-color: rgba(19, 18, 18, 0.88);
+  transition: all 0.4s;
+  color: #fff;
+}
+
+#leftMenu ul {
+  padding-top: 80px;
+  padding-left: 20px;
+}
+
+#leftMenu li {
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.left-menu-open {
+  transform: translateX(0) !important;
+}
+
+/* open state */
+
+/* transitions */
