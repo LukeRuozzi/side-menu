@@ -5,6 +5,7 @@ body {
   margin: 0;
   background: #444;
   font-family: 'Poppins';
+  position: relative;
 }
 li,
 ul {
@@ -28,7 +29,7 @@ header {
 }
 
 #menu-toggler {
-  position: fixed;
+  position: absolute;
   top: 50px;
   left: 20px;
   cursor: pointer;
